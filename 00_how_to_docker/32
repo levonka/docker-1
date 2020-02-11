@@ -1,0 +1,3 @@
+docker rm --force $(docker ps -aq)
+
+# -f, --force 	— Force the removal of a running container (uses SIGKILL).

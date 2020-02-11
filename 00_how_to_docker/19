@@ -1,0 +1,20 @@
+docker run -dit --rm --name Abathur -v ~/:/root -p 3000:3000 python:2-slim
+docker exec Abathur pip -q install Flask
+docker exec -e FLASK_APP=/root/Desktop/app.py Abathur flask run --host=0.0.0.0 --port 3000
+
+
+# -dit		- because python immediately exits
+# exec		- Run a command in a running container
+
+#	#!/usr/bin/env python
+#	# -*- coding: utf-8 -*-
+#	from flask import Flask
+#	app = Flask(__name__)
+ 
+#	@app.route('/')
+#	def hello_world():
+#		return '<h1>Hello world!</h1>'
+
+# https://flask.palletsprojects.com/en/1.1.x/installation/
+# https://flask-russian-docs.readthedocs.io/ru/latest/quickstart.html
+# https://www.cyberciti.biz/faq/set-environment-variable-linux/

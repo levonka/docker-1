@@ -1,0 +1,5 @@
+docker run -it --rm alpine /bin/sh
+
+# -it		- создать сеанс интерактивной работы на подключаемом терминальном устройстве
+# --rm      - Automatically remove the container when it exits
+# /bin/sh	- program which execute

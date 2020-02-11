@@ -1,0 +1,6 @@
+docker inspect --format='{{.NetworkSettings.IPAddress}}' overlord
+
+# docker inspect     Return low-level information on Docker objects (detailed information).
+#	--format string		— Format the output using the given Go template
+
+# https://docs.docker.com/engine/reference/commandline/inspect/

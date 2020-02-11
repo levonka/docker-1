@@ -1,0 +1,5 @@
+docker service logs --follow $(docker service ps engineering-bay -q --filter "name=engineering-bay.1" | head -n 1)
+
+# ps       - List the tasks of one or more services
+
+# https://docs.docker.com/engine/reference/commandline/service_ps/

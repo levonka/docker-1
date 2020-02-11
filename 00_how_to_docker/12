@@ -1,0 +1,7 @@
+docker run --detach --restart=on-failure -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings -v hatchery:/var/lib/mysql --name spawning-pool mysql:5.7
+
+# -e, --env list		- Set environment variables
+# -v, --volume:<path>	- 
+# mysql:5.7				- Wordpress doesn't support (Error establishing a database connection)
+
+# https://www.ntweekly.com/2019/09/20/running-wordpress-and-mysql-on-docker-containers/

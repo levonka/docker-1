@@ -1,0 +1,4 @@
+eval $(docker-machine env Char)
+
+# eval like in PHP (example: eval 'echo hi')
+# https://docs.docker.com/docker-for-mac/docker-toolbox/
