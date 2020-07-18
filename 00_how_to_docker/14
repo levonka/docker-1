@@ -1,5 +1,5 @@
 docker run --detach --name lair -p 8080:80 --link spawning-pool:mysql wordpress
 
-# --link <container name>:alias
+# --link <container name>:alias - links containers
 
 # https://www.ntweekly.com/2019/09/20/running-wordpress-and-mysql-on-docker-containers/

@@ -13,5 +13,6 @@ ONBUILD RUN bundle install && rake db:migrate && rake db:seed
 
 # git clone https://github.com/IBM-Cloud/rails-4.20-blog.git
 # docker build -t ft-rails:on-build .
+# cd ../
 # docker build -t ex02 .
 # docker run -it --rm -p 3000:3000 ex02

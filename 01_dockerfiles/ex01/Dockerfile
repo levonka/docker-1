@@ -1,6 +1,6 @@
 FROM debian
 
-# Ports config
+# Ports config (optional)
 EXPOSE 9987/udp 10011 30033
 
 ENV TS3SERVER_LICENSE=accept
